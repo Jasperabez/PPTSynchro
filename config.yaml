@@ -1,0 +1,27 @@
+APP_NAME: "PPTSynchro"
+
+# Wifi or Bluetooth
+COMMS_TYPE: Wifi
+# Modes Sniff_key, Controller_server, Controller_client
+PROGRAM_MODE: Controller_client
+
+WIFI_SOCKET_SERVER:
+  HOST: '192.168.1.85'
+  PORT: 4006
+BT_SOCKET_SERVER:
+  HOST: 'b0:c0:90:5a:1b:3f'
+  PORT: 4
+LOG_FILE: 'PPTControllerServer.log'
+LOGGING_LEVEL: DEBUG
+
+CONTROLLER_SERVER:
+  TOAST_SHOW_SEC: 1
+  TOGGLE_KEY: "Oem_3"
+
+CONTROLLER_CLIENT:
+  WIFI_SOCKET_CLIENT:
+    HOST: '192.168.1.188'
+    PORT: 4005
+  NEXT_KEYS: ["Right", "Down", "Next", "Page_Down"]
+  PREV_KEYS: ["Left", "Up", "Prev", "Page_Up"]
+
