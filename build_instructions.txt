@@ -1,2 +1,2 @@
 --name PPTSynchro --additional-hooks-dir=.
-hook-win10toast enables successful notification alert
+hook-win10toast
